@@ -41,3 +41,10 @@ exports.update_password_schema = {
         newPwd: joi.not(joi.ref('oldPwd')).concat(password),
     },
 }
+
+//验证规则对象 - 更新头像
+exports.update_avatar_schema = {
+    body: {
+        avatar
+    }
+}
